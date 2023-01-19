@@ -39,9 +39,11 @@ function Login() {
                   startAdornment={<InputAdornment position="start">
                     R$
                   </InputAdornment>} />
-              </InputContainer><Button
+              </InputContainer>
+              <Button
                 variant="contained"
                 color="primary"
+                disabled={nome.length < 4}
                 onClick={() => history.push('/feira')}
               >
                 Avançar
